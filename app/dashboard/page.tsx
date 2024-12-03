@@ -13,6 +13,7 @@ interface SalesData {
   Date: string
   PredictedNetSales: number
 }
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const columns: ColumnDef<SalesData, any>[] = [
     {
       header: 'Date',

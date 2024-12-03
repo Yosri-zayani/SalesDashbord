@@ -16,8 +16,8 @@ export async function GET(request: Request) {
 
   const db = await connectToDatabase();
   const collection = db.collection('predectedSalesdata');
-
-  let query: any = {};
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const query: any = {};
 
   // Validate and construct date query if startDate and endDate are provided
   if (startDate && endDate) {
